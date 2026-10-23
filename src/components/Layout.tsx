@@ -1,3 +1,4 @@
+import InstanceSwitcher from "@components/InstanceSwitcher";
 import Toast from "@components/Toast";
 import { useFeatures } from "@contexts/Features.hook";
 import { useSidebarSetting } from "@contexts/SidebarSetting.hook";
@@ -140,6 +141,7 @@ const Layout = ({ children }: LayoutProps) => {
                           </>
                         </ul>
                         <div className="mt-auto">
+                          <InstanceSwitcher />
                           <Link
                             activeProps={{
                               className:
@@ -199,6 +201,7 @@ const Layout = ({ children }: LayoutProps) => {
                 ))}
               </ul>
               <div className="mt-auto">
+                <InstanceSwitcher />
                 <Link
                   activeProps={{
                     className:
